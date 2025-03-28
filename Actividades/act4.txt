@@ -1,0 +1,12 @@
+PROCEDIMIENTO ordenar(REF v : VECTOR(ENTERO), tamaño : ENTERO)
+        i, j, aux : ENTERO; //O(1) asignacion de memoria a una variable
+        PARA i DESDE 0 HASTA tamaño-1 HACER 
+            PARA j DESDE 0 HASTA tamaño-1 HACER
+                SI (v[j] > v[j+1] ENTONCES
+                    aux := v[j]; //O(1) asignacion de memoria a una variable
+                    v[j] := v[j+1]; //O(1) asignacion de memoria a una variable
+                    v[j+1] := aux; //O(1) asignacion de memoria a una variable
+                FINSI
+            FINPARA
+        FINPARA
+FINPROCEDIMIENTO
