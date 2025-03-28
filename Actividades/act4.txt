@@ -1,8 +1,9 @@
 PROCEDIMIENTO ordenar(REF v : VECTOR(ENTERO), tamaño : ENTERO)
         i, j, aux : ENTERO; //O(1) asignacion de memoria a una variable
-        PARA i DESDE 0 HASTA tamaño-1 HACER 
-            PARA j DESDE 0 HASTA tamaño-1 HACER
-                SI (v[j] > v[j+1] ENTONCES
+        PARA i DESDE 0 HASTA tamaño-1 HACER // O(n) porque esto se repetira n veces 
+            PARA j DESDE 0 HASTA tamaño-1 HACER //O(n) porque esto se repetira n veces
+                SI (v[j] > v[j+1] ) ENTONCES //O(1) debido a que es una CONDICIONAL basica y simple. 
+                //Se lleva acabo una sola evaluacion independientemente del tamano de los numeros.
                     aux := v[j]; //O(1) asignacion de memoria a una variable
                     v[j] := v[j+1]; //O(1) asignacion de memoria a una variable
                     v[j+1] := aux; //O(1) asignacion de memoria a una variable
@@ -10,3 +11,5 @@ PROCEDIMIENTO ordenar(REF v : VECTOR(ENTERO), tamaño : ENTERO)
             FINPARA
         FINPARA
 FINPROCEDIMIENTO
+
+complejidad total O(n^2) 
