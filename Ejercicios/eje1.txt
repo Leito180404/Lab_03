@@ -2,7 +2,7 @@ Ejercicio BM
 
 FUNCIÓN BM (v : VECTOR(ENTERO), n : ENTERO) : ENTERO
     m := v[0] //O(1) asignacion de espacio en la memoria para una variable
-    PARA i DESDE 1 HASTA n-1 HACER O(n) se repite n veces asi que es lineal
+    PARA i DESDE 1 HASTA n-1 HACER //O(n) se repite n veces asi que es lineal
         SI v[i] > m ENTONCES //O(1) if que se compara una sola vez
             m := v[i] //O(1) asignacion de espacio en la memoria para una variable
         FINSI

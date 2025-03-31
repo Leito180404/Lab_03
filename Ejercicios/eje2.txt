@@ -1,13 +1,15 @@
 Ejercicio ConteoI
 
 FUNCIÓN ConteoI (v : VECTOR(ENTERO), n : ENTERO) : ENTERO
-    conteo := 0
-    PARA i DESDE 0 HASTA n-2 HACER
-        PARA j DESDE i+1 HASTA n-1 HACER
-            SI v[i] = v[j] ENTONCES
-                conteo := conteo + 1
+    conteo := 0  //O(1) asignacion de espacio en la memoria para una variable
+    PARA i DESDE 0 HASTA n-2 HACER //O(n) se repite n veces asi que es lineal
+        PARA j DESDE i+1 HASTA n-1 HACER //O(n) se repite n veces asi que es lineal
+            SI v[i] = v[j] ENTONCES //O(1) if que se compara una sola vez
+                conteo := conteo + 1 //O(1) asignacion de espacio en la memoria para una variable
             FINSI
         FINPARA
     FINPARA
-    DEVOLVER conteo
+    DEVOLVER conteo //O(1) asignacion de espacio en la memoria para una variable
 FINFUNCIÓN
+
+El orden final es O(n^2) osea complejidad cuadratica.
