@@ -9,7 +9,7 @@ FUNCIÓN ConteoI (v : VECTOR(ENTERO), n : ENTERO) : ENTERO
             FINSI
         FINPARA
     FINPARA
-    DEVOLVER conteo //O(1) asignacion de espacio en la memoria para una variable
+    DEVOLVER conteo //O(1) devuelve el valor una sola vez
 FINFUNCIÓN
 
 El orden final es O(n^2) osea complejidad cuadratica.
