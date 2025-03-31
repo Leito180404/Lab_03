@@ -14,3 +14,5 @@ public static int moda(int[] v) {
     }
     return moda; //O(1) devuelve el valor una sola vez
 }
+
+El orden final es O(n) osea complejidad lineal.
