@@ -1,0 +1,13 @@
+Ejercicio ConteoI
+
+FUNCIÓN ConteoI (v : VECTOR(ENTERO), n : ENTERO) : ENTERO
+conteo := 0
+PARA i DESDE 0 HASTA n-2 HACER
+PARA j DESDE i+1 HASTA n-1 HACER
+SI v[i] = v[j] ENTONCES
+conteo := conteo + 1
+FINSI
+FINPARA
+FINPARA
+DEVOLVER conteo
+FINFUNCIÓN
