@@ -3,10 +3,14 @@ Dado un arreglo, encuentra el número más frecuente usando un diccionario
         SI y = 0 ENTONCES //O(1) if que se compara una sola vez
             DEVOLVER 1 //O(1) devuelve el valor una sola vez
         SINO SI y % 2 = 0 ENTONCES //O(1) else que se compara una sola vez
-            mitad := potenciaRapida(x, y / 2) //O(2^n)  
+            mitad := potenciaRapida(x, y / 2) //O(2^n) La funcion se llama asi misma dentro de
+            // la funcion osea recursividad 
             // para una variable
             DEVOLVER mitad * mitad //O(1) devuelve el valor una sola vez
         SINO 
-            DEVOLVER x * potenciaRapida(x, y - 1) //O(2^n) 
+            DEVOLVER x * potenciaRapida(x, y - 1) //O(2^n) La funcion se llama asi misma dentro de
+            // la funcion osea recursividad 
         FINSI
     FINFUNCIÓN
+
+El orden final es O() 
