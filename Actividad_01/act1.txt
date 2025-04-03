@@ -1,8 +1,8 @@
 PROCEDIMIENTO intercambia(REF x : ENTERO, REF y : ENTERO)
- aux : ENTERO; // O(1) declaracion de tipo de variable
- aux := x; // O(1) asignacion de memoria para una variable
- x := y; // O(1) asignacion de memoria para una variable
- y := aux; // O(1) asignacion de memoria para una variable
+    aux : ENTERO; // O(1) declaracion de tipo de variable
+    aux := x; // O(1) asignacion de memoria para una variable
+    x := y; // O(1) asignacion de memoria para una variable
+    y := aux; // O(1) asignacion de memoria para una variable
 FINPROCEDIMIENTO
 
 Por lo tanto el orden final es O(1) ya que su complejidad sera constante y se ejecutara 1 sola vez.
