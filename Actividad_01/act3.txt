@@ -2,10 +2,11 @@ FUNCION suma (v : VECTOR(ENTERO), tamaño : ENTERO) : ENTERO
         i, result : ENTERO;  //O(1) asignacion de memoria para una variable 
         result := 0; //O(1) asignacion de memoria para una variable
         PARA i DESDE 0 HASTA tamaño-1 HACER 
-        result := result + v[i]; //O(1) asignacion de memoria para una variable pero este se repetira
-        //por el bucle. Se repetira las veces del tamaño osea n veces por lo que el bucle tendria
-        //un orden O(n)
+                result := result + v[i]; //O(1) asignacion de memoria para una variable 
+        //pero este se repetira por el bucle. Se repetira las veces del "tamaño"-1 osea n 
+        //veces por lo que el bucle tendria un orden O(n)
         FINPARA
  DEVOLVER result; //O(1) Devolucion de un valor
 FINFUNCION
 
+Por lo tanto el orden final sera O(n) complejidad lineal.
