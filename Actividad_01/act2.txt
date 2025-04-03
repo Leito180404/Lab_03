@@ -1,11 +1,13 @@
 FUNCION max(x : ENTERO, y : ENTERO) : ENTERO
         result : ENTERO; //O(1) asignacion de memoria para una variable
-        SI (x >= y) ENTONCES // O(1) debido a que es una CONDICIONAL basica y simple. Se lleva acabo una
-        sola evaluacion independientemente del tamano de los numeros.
+        SI (x >= y) ENTONCES // O(1) debido a que es una CONDICIONAL basica y simple. Se lleva 
+        acabo una sola evaluacion independientemente del tamaño de los numeros.
         result := x; // O(1) asignacion de memoria para una variable
         SINO
         result := y; // O(1) asignacion de memoria para una variable
         FINSI   
  DEVOLVER result; //O(1) devolucion de un valor.
 FINFUNCION
+
+Por lo tanto su orden final sera O(1) ya que tendra una complejidad constante.
 
