@@ -5,7 +5,8 @@ public static int moda(int[] v) {
     int maxFrecuencia = 0; //O(1) asignacion de espacio en la memoria para una variable
     int moda = v[0]; //O(1) asignacion de espacio en la memoria para una variable
     for (int num : v) { //O(n) se repite las veces del tamaño del arreglo 
-        int f = frecuencia.getOrDefault(num, 0) + 1; //O(1) asignacion de espacio en la memoria para una variable
+        int f = frecuencia.getOrDefault(num, 0) + 1; //O(1) asignacion de espacio en la memoria 
+        //para una variable
         frecuencia.put(num, f); //O(1) llamada de una funcion de la clase Map
         if (f > maxFrecuencia) {  //O(1) if que se compara una sola vez
             maxFrecuencia = f; //O(1) asignacion de espacio en la memoria para una variable
