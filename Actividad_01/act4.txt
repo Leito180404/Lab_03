@@ -12,4 +12,4 @@ PROCEDIMIENTO ordenar(REF v : VECTOR(ENTERO), tamaño : ENTERO)
         FINPARA
 FINPROCEDIMIENTO
 
-complejidad total O(n^2) 
+Por lo tanto el orden final sera O(n^2) complejidad cuadratica debido a los bucles anidados. 
