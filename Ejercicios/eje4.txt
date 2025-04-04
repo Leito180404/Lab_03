@@ -1,6 +1,6 @@
 Dado un arreglo, encuentra el número más frecuente usando un diccionario
     FUNCIÓN potenciaRapida(x : ENTERO, y : ENTERO) : ENTERO
-        SI y = 0 ENTONCES 
+        SI y = 0 ENTONCES   
             DEVOLVER 1 
         SINO SI y % 2 = 0 ENTONCES
             mitad := potenciaRapida(x, y / 2) /
